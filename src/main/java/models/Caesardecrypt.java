@@ -38,10 +38,10 @@ public class Caesardecrypt {
 
                 if(Character.isLowerCase(ch)) {
 
-                    char c=(char) (ch + shiftKey);
+                    char c=(char) (ch - shiftKey);
 
-                    if (c > 'z') {
-                        cipherText+=(char)(ch-(26-shiftKey));
+                    if (c < 'a') {
+                        cipherText+=(char)(ch+(26-shiftKey));
                     }
                     else{
                         cipherText +=c;
@@ -49,11 +49,11 @@ public class Caesardecrypt {
                 }
                 else if(Character.isUpperCase(ch)){
 
-                    char c=(char)(ch+shiftKey);
+                    char c=(char)(ch-shiftKey);
 
-                    if(c>'Z'){
+                    if(c<'A'){
 
-                        cipherText+=(char)(ch-(26-shiftKey));
+                        cipherText+=(char)(ch+(26-shiftKey));
                     }
                     else{
                         cipherText +=c;
