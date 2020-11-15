@@ -17,7 +17,7 @@ public class Caesardecrypt {
     public String getText (){
         return this.text;
     }
-    public static String encrypt (String text,int shiftKey){
+    public static String decrypt (String text,int shiftKey){
         if(shiftKey > 26){
 
             shiftKey=(shiftKey%26);
