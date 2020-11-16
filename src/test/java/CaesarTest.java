@@ -40,16 +40,16 @@ public class CaesarTest {
         }
     @Test
     public void testUpperCase() {
-        int key = 2;
-        String cha = "M";
-        String expectedch = "O";
+        int key = 5;
+        String cha = "A";
+        String expectedch = "F";
         assertEquals(expectedch, Caesar.encrypt( cha, key ));
     }
     @Test
     public void testIfletterisLowerCaseWork() {
-        int key = 2;
+        int key = 5;
         String cha = "m";
-        String expectedcha = "o";
+        String expectedcha = "r";
         assertEquals(expectedcha, Caesar.encrypt ( cha, key ));
     }
 

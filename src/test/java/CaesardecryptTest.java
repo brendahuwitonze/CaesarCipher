@@ -41,17 +41,17 @@ public class CaesardecryptTest {
 
     @Test
     public void testUpperCase (){
-        int key=2;
-        String cha="M";
-        String expectedch="O";
+        int key=-5;
+        String cha="A";
+        String expectedch="F";
         assertEquals (expectedch, Caesardecrypt.decrypt (cha, key));
     }
 
     @Test
     public void testLowerCaseWork (){
-        int key=2;
-        String cha="m";
-        String expectedcha="o";
+        int key=-5;
+        String cha="a";
+        String expectedcha="f";
         assertEquals (expectedcha, Caesardecrypt.decrypt (cha, key));
     }
 }
