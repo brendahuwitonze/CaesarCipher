@@ -39,26 +39,26 @@ public class CaesarTest {
             assertEquals ( expectedtext,cipherText);
         }
     @Test
-    public void chararray(){
-        char ch='a';
-        char expectedch='a';
-        assertEquals ( expectedch,ch);
+    public void testUpperCase() {
+        int key = 2;
+        String cha = "M";
+        String expectedch = "O";
+        assertEquals(expectedch, Caesar.encrypt( cha, key ));
+    }
+    @Test
+    public void testIfletterisLowerCaseWork() {
+        int key = 2;
+        String cha = "m";
+        String expectedcha = "o";
+        assertEquals(expectedcha, Caesar.encrypt ( cha, key ));
     }
 
-    @Test
-    public void uppercase(){
-        char c='B';
-        char expectedc='B';
-        assertEquals ( expectedc,c);
-    }
-    @Test
-    public void lowercase(){
-        char c='d';
-        char expectedc='d';
-        assertEquals ( expectedc,c);
-    }
 
 }
+
+
+
+
 
 
 

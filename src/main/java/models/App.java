@@ -1,21 +1,29 @@
 package models;
-import java.io.Console;
+import java.util.Scanner;
 public class App {
     public static void main(String[]orgs){
-        Console myConsole=System.console();
+
+        Scanner aScanner=new Scanner(System.in);
+        String word;
+        int key;
         System.out.println ("Enter the text");
-        String word=myConsole.readLine ();
+        word=aScanner.nextLine();
+
         System.out.println ("Enter the key");
-        String key=myConsole.readLine ();
-        int nKey=Integer.parseInt (key);
-        if((nKey<1)||(nKey>26)) {
+        key=aScanner.nextInt();
+
+
+        if((key<1)||(key>26)) {
             System.out.println ("Enter the key that is between 1 and 26");
         }
-        Caesar result=new  Caesar(word,nKey);
-        String output=result.encrypt (word,nKey);
-        System.out.println ("The encrypted word is"+" "+ output);
+        System.out.println("the encrypted text:" + Caesar.encrypt(word,key));
+        System.out.println("the decrepted text:" + Caesardecrypt.decrypt(word,key));
+
 
     }
 
 
 }
+
+
+

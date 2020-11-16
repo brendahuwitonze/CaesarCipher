@@ -18,11 +18,11 @@ public class Caesardecrypt {
         return this.text;
     }
     public static String decrypt (String text,int shiftKey){
-        if(shiftKey > 26){
+        if(shiftKey < 26){
 
             shiftKey=(shiftKey%26);
         }
-        else if(shiftKey < 0){
+        else if(shiftKey > 0){
 
             shiftKey=(shiftKey % 26)+26;
         }
