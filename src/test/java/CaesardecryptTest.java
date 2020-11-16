@@ -45,7 +45,7 @@ public class CaesardecryptTest {
         assertEquals(expectedch, Caesardecrypt .decrypt( cha, key ));
     }
     @Test
-    public void testIfletterisLowerCaseWork() {
+    public void testLowerCaseWork() {
         int key = 2;
         String cha = "m";
         String expectedcha = "o";
