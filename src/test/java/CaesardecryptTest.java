@@ -18,37 +18,40 @@ public class CaesardecryptTest {
 
     @Test
     public void word () throws Exception{
-        Caesardecrypt Encode=new Caesardecrypt ("brendah",5);
-        assertEquals ("brendah",Encode.getText ());
+        Caesardecrypt Encode=new Caesardecrypt ("brendah", 5);
+        assertEquals ("brendah", Encode.getText ());
     }
 
     @Test
-    public void testtext() {
-        int shiftKey = 1;
-        String text = "pejmmf";
-        String expectedtext = "odille";
-        String actualtext = Caesardecrypt.decrypt(text, shiftKey);
+    public void testtext (){
+        int shiftKey=1;
+        String text="pejmmf";
+        String expectedtext="odille";
+        String actualtext=Caesardecrypt.decrypt (text, shiftKey);
 
-        assertEquals(expectedtext, actualtext);
+        assertEquals (expectedtext, actualtext);
     }
+
     @Test
-    public void theText(){
+    public void theText (){
         String cipherText="hello";
         String expectedtext="hello";
-        assertEquals ( expectedtext,cipherText);
+        assertEquals (expectedtext, cipherText);
     }
+
     @Test
-    public void testUpperCase() {
-        int key = 2;
-        String cha = "M";
-        String expectedch = "O";
-        assertEquals(expectedch, Caesardecrypt .decrypt( cha, key ));
+    public void testUpperCase (){
+        int key=2;
+        String cha="M";
+        String expectedch="O";
+        assertEquals (expectedch, Caesardecrypt.decrypt (cha, key));
     }
+
     @Test
-    public void testLowerCaseWork() {
-        int key = 2;
-        String cha = "m";
-        String expectedcha = "o";
-        assertEquals(expectedcha, Caesardecrypt .decrypt ( cha, key ));
+    public void testLowerCaseWork (){
+        int key=2;
+        String cha="m";
+        String expectedcha="o";
+        assertEquals (expectedcha, Caesardecrypt.decrypt (cha, key));
     }
 }
