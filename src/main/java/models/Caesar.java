@@ -4,7 +4,7 @@ public class Caesar {
         private String text;
         private int shiftKey;
 
-        public  Caesar (String text, int shiftKey){
+        public Caesar(String text, int shiftKey){
             this.text=text;
             this.shiftKey=shiftKey;
 
