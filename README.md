@@ -22,7 +22,7 @@ Decrypted text;
 Intellij
 ## Screenshot of codes
 
-* Decrypt 
+*  Decrypt 
 
 ![Decrypt](image/caesadecryption.png)
 
