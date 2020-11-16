@@ -1,5 +1,5 @@
 # CeaserCipher
-## Author name:[Uwitonze brendah]()
+## Author name:[Uwitonze brendah](https://github.com/brendahuwitonze)
 ## [CaesarCipher on github](https://github.com/brendahuwitonze/CaesarCipher)
 
 ### Description of the project
